@@ -30,52 +30,33 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden w-full">
       <main className="relative h-auto bg-[#9b948f] text-[#174714]">
-        {/* Hero Section */}
-        <section className="flex flex-col items-center justify-center h-screen px-6 text-center">
-          <div className="Header mt-20">
-            <h1 className="mt-[-2rem] text-4xl font-bold tracking-widest sm:text-5xl md:text-6xl lg:text-7xl">
+        {/* Hero Section - Reduced height */}
+        <section className="flex flex-col items-center justify-center h-[85vh] px-6 text-center">
+          <div className="Header mt-50">
+            <h1 className="mt-[-1rem] text-4xl font-bold tracking-widest sm:text-5xl md:text-6xl lg:text-7xl">
               mlthyphnt
             </h1>
           </div>
           <div className="flex flex-col md:flex-row items-center px-4">
-            <div className="md:-ml-16 lg:-ml-32 xl:-ml-40">
+            <div className="md:-ml-16 lg:-ml-32 xl:-ml-170">
               <Image
                 src="/images/pumpcember.gif"
                 alt="Decorative"
                 width={500}
                 height={500}
-                className="mt-[-3rem] w-[80%] sm:w-[500px]"
+                className="mt-[1rem] w-[80%] sm:w-[500px]"
                 priority
                 unoptimized
               />
             </div>
-            <p className="text-center md:mt-25 lg:mt-25 md:mb-[-7rem] lg:mb-[-7rem] text-lg sm:text-lg md:text-2xl lg:text-3xl leading-loose tracking-widest text-black">
-              Energy never dies it only ever shifts form - <br />
-              fragments weave and realign. <br />
-              Motion never stops. <br />
-              Web3 vibrates, <br /> AI sparks - <br />
-              Narratives bend in the flux,
-            </p>
           </div>
           <div className="flex justify-center mt-10 md:mt-25 md:mr-26 lg:mr-35 xl:ml-110">
-            <p
-              onClick={() =>
-                window.open(
-                  "https://0rqe3jewuid.typeform.com/to/kBxNeYrF",
-                  "_blank"
-                )
-              }
-              className="tracking-widest star-cursor text-black hover:text-[#174714] transition-colors duration-300 cursor-pointer text-sm sm:text-base"
-            >
-              ✧⋄⋆⋅⋆⋄✧⋄⋆⋅⋆⋄✧ Fully booked for now but let&apos;s plan something
-              soon! ✧⋄⋆⋅⋆⋄✧⋄⋆⋅⋆⋄✧
-            </p>
           </div>
         </section>
 
-        {/* Images Section - Optimized, No Parallax */}
-        <div style={{ marginBottom: "-10vh" }}>
-          <section className="px-6 pt-12 pb-16 bg-[#9b948f] w-full">
+        {/* Images Section - Reduced top padding */}
+        <div style={{ marginBottom: "-10vh", marginTop: "-5vh" }}>
+          <section className="px-6 pt-4 pb-16 bg-[#9b948f] w-full mb-20">
             <div className="max-w-5xl mx-auto">
               <div className="flex flex-col gap-8 mb-8">
                 {imagePanels.map((panel, index) => (
