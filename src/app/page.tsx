@@ -32,13 +32,17 @@ export default function Home() {
       <main className="relative h-auto bg-[#9b948f] text-[#174714]">
         {/* Hero Section - Reduced height */}
         <section className="flex flex-col items-center justify-center h-[85vh] px-6 text-center">
-          <div className="Header mt-50">
-            <h1 className="mt-[-1rem] text-4xl font-bold tracking-widest sm:text-5xl md:text-6xl lg:text-7xl">
-              mlthyphnt
-            </h1>
-          </div>
-          <div className="flex flex-col md:flex-row items-center px-4">
-            <div className="md:-ml-16 lg:-ml-32 xl:-ml-170">
+          {/* Flex container with order control for responsive layout */}
+          <div className="flex flex-col items-center w-full">
+            {/* Header - Order 2 on mobile (below), Order 1 on sm+ screens (above) */}
+            <div className="Header md:-mt-[-10rem] lg:-mt-[-10rem] order-2 sm:order-1 mb-8 sm:mb-0">
+              <h1 className="mt-[-1rem] text-4xl font-bold tracking-widest sm:text-5xl md:text-6xl lg:text-7xl">
+                mlthyphnt
+              </h1>
+            </div>
+            
+            {/* GIF - Order 1 on mobile (above), Order 2 on sm+ screens (below) */}
+            <div className="sm:-ml-20 md:-ml-50 lg:-ml-100 xl:-ml-170 order-1 sm:order-2 mb-4 sm:mb-0">
               <Image
                 src="/images/pumpcember.gif"
                 alt="Decorative"
@@ -50,6 +54,7 @@ export default function Home() {
               />
             </div>
           </div>
+          
           <div className="flex justify-center mt-10 md:mt-25 md:mr-26 lg:mr-35 xl:ml-110">
           </div>
         </section>
