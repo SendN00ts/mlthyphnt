@@ -42,7 +42,7 @@ export default function Home() {
             </div>
             
             {/* GIF - Order 1 on mobile (above), Order 2 on sm+ screens (below) */}
-            <div className="sm:-ml-20 md:-ml-50 lg:-ml-100 xl:-ml-170 order-1 sm:order-2 mb-4 sm:mb-0">
+            <div className="sm:-ml-20 md:-ml-50 lg:-ml-150 xl:-ml-250 order-1 sm:order-2 mb-4 sm:mb-0">
               <Image
                 src="/images/pumpcember.gif"
                 alt="Decorative"
