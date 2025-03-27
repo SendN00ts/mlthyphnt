@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 
-// Move image data outside component to prevent recreation on renders
 const imagePanels = [
   {
     src: "/images/AImonica.mp4",
@@ -23,47 +22,43 @@ const imagePanels = [
     src: "/images/cards2.jpg",
     title: "Tales & Perception",
   },
-  { src: "/images/Coin2.mp4", title: "Strategy Ops" },
+  {
+    src: "/images/Coin2.mp4",
+    title: "Strategy Ops",
+  },
 ];
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden w-full">
       <main className="relative h-auto bg-[#9b948f] text-[#174714]">
-        {/* Hero Section - Reduced height on mobile */}
-        <section className="flex flex-col items-center justify-start sm:justify-center h-[70vh] sm:h-[85vh] px-6 text-center pt-6 sm:pt-0">
-          {/* Flex container with order control for responsive layout */}
-          <div className="flex flex-col items-center w-full mt-2 sm:mt-0">
-            {/* Header - Order 2 on mobile (below), Order 1 on sm+ screens (above) */}
-            <div className="Header md:-mt-[-10rem] lg:-mt-[-10rem] order-2 sm:order-1 mb-4 sm:mb-0">
-              <h1 className="mt-[-1rem] text-4xl font-bold tracking-widest sm:text-5xl md:text-6xl lg:text-7xl">
-                mlthyphnt
-              </h1>
-            </div>
+        {/* Hero Section */}
+        <section className="flex flex-col items-center justify-center h-[60vh] px-6 text-center">
+          {/* Title Row with GIF */}
+          <div className="flex flex-row items-center justify-center space-x-4 mx-auto">
+            {/* Star GIF */}
+            <Image
+              src="/images/pumpcember.gif"
+              alt="Decorative Star"
+              width={300}
+              height={300}
+              className="object-contain mt-[-9rem] ml-[-4rem]"
+              priority
+              unoptimized
+            />
             
-            {/* GIF - Order 1 on mobile (above), Order 2 on sm+ screens (below) */}
-            <div className="sm:-ml-20 md:-ml-50 lg:-ml-150 xl:-ml-250 order-1 sm:order-2 mb-2 sm:mb-0">
-              <Image
-                src="/images/pumpcember.gif"
-                alt="Decorative"
-                width={500}
-                height={500}
-                className="mt-0 sm:mt-[1rem] w-[75%] sm:w-[80%] md:w-[500px]"
-                priority
-                unoptimized
-              />
-            </div>
-          </div>
-          
-          <div className="flex justify-center mt-4 md:mt-25 md:mr-26 lg:mr-35 xl:ml-110">
+            {/* Title */}
+            <h1 className="text-4xl font-bold tracking-widest sm:text-5xl md:text-6xl lg:text-7xl mt-[-10rem]">
+              mlthyphnt
+            </h1>
           </div>
         </section>
 
-        {/* Images Section - Reduced top padding */}
-        <div style={{ marginBottom: "-10vh", marginTop: "-5vh" }}>
-          <section className="px-6 pt-4 pb-16 bg-[#9b948f] w-full mb-20">
+        {/* Images Section */}
+        <div style={{ marginBottom: "-5vh", marginTop: "-7vh" }}>
+          <section className="px-6 pt-4 pb-16 bg-[#9b948f] w-full mb-20 mt-[-10rem]">
             <div className="max-w-5xl mx-auto">
-              <div className="flex flex-col gap-8 mb-8">
+              <div className="flex flex-col gap-4 mb-4">
                 {imagePanels.map((panel, index) => (
                   <div
                     key={index}
@@ -84,7 +79,7 @@ export default function Home() {
                             objectPosition: "center center",
                             pointerEvents: "none",
                           }}
-                          onContextMenu={(e) => e.preventDefault()} 
+                          onContextMenu={(e) => e.preventDefault()}
                         >
                           <source src={panel.src} type="video/mp4" />
                         </video>
