@@ -35,20 +35,20 @@ export default function Home() {
         {/* Hero Section */}
         <section className="flex flex-col items-center justify-center h-[60vh] px-6 text-center">
           {/* Title Row with GIF */}
-          <div className="flex flex-row items-center justify-center space-x-4 mx-auto">
+          <div className="flex flex-row items-center justify-center space-x-4 mx-auto ">
             {/* Star GIF */}
             <Image
               src="/images/pumpcember.gif"
               alt="Decorative Star"
-              width={300}
-              height={300}
-              className="object-contain mt-[-9rem] ml-[-4rem]"
+              width={120}
+              height={120}
+              className="object-contain mt-[-15rem] sm:mt-[-9rem] ml-[-2rem] sm:ml-[-4rem] sm:w-[300px] sm:h-[300px]"
               priority
               unoptimized
             />
             
             {/* Title */}
-            <h1 className="text-4xl font-bold tracking-widest sm:text-5xl md:text-6xl lg:text-7xl mt-[-10rem]">
+            <h1 className="text-4xl font-bold tracking-widest text-xl sm:text-5xl md:text-6xl lg:text-7xl mt-[-16rem] sm:mt-[-10rem]">
               mlthyphnt
             </h1>
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
 
         {/* Images Section */}
         <div style={{ marginBottom: "-5vh", marginTop: "-7vh" }}>
-          <section className="px-6 pt-4 pb-16 bg-[#9b948f] w-full mb-20 mt-[-10rem]">
+          <section className="px-6 pt-4 pb-16 bg-[#9b948f] w-full mb-20 mt-[-18rem] sm:mt-[-10rem]">
             <div className="max-w-5xl mx-auto">
               <div className="flex flex-col gap-4 mb-4">
                 {imagePanels.map((panel, index) => (
