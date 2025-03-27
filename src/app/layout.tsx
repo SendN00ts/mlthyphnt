@@ -3,8 +3,8 @@ import './globals.css'
 
 
 export const metadata = {
-  title: 'Your Product Name - Landing Page',
-  description: 'A compelling description of your product or service',
+  title: 'multihyphenate | mlthyphn',
+  description: 'web3 studio working with great humans across verticals like ai agents, culture chains, defi and more.',
 }
 
 export default function RootLayout({ 
