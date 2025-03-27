@@ -42,13 +42,13 @@ export default function Home() {
               alt="Decorative Star"
               width={120}
               height={120}
-              className="object-contain mt-[-15rem] sm:mt-[-9rem] ml-[-2rem] sm:ml-[-4rem] sm:w-[300px] sm:h-[300px]"
+              className="object-contain mt-[-19rem] sm:mt-[-9rem] ml-[-2rem] sm:ml-[-4rem] sm:w-[300px] sm:h-[300px]"
               priority
               unoptimized
             />
             
             {/* Title */}
-            <h1 className="text-4xl font-bold tracking-widest text-xl sm:text-5xl md:text-6xl lg:text-7xl mt-[-16rem] sm:mt-[-10rem]">
+            <h1 className="text-4xl font-bold tracking-widest text-xl sm:text-5xl md:text-6xl lg:text-7xl mt-[-20rem] sm:mt-[-10rem]">
               mlthyphnt
             </h1>
           </div>
@@ -56,9 +56,9 @@ export default function Home() {
 
         {/* Images Section */}
         <div style={{ marginBottom: "-5vh", marginTop: "-7vh" }}>
-          <section className="px-6 pt-4 pb-16 bg-[#9b948f] w-full mb-20 mt-[-18rem] sm:mt-[-10rem]">
+          <section className="px-6 pt-4 pb-16 bg-[#9b948f] w-full sm:mb-20 mt-[-22rem] sm:mt-[-10rem]">
             <div className="max-w-5xl mx-auto">
-              <div className="flex flex-col gap-4 mb-4">
+              <div className="flex flex-col gap-4 sm:mb-4">
                 {imagePanels.map((panel, index) => (
                   <div
                     key={index}
