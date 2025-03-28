@@ -3,7 +3,7 @@ import './globals.css'
 
 
 export const metadata = {
-  title: 'multihyphenate | mlthyphn',
+  title: 'multihyphenate | mlthyphnt',
   description: 'web3 studio working with great humans across verticals like ai agents, culture chains, defi and more.',
 }
 

@@ -92,10 +92,10 @@ export default function Home() {
 
       <main className="relative h-auto bg-[#9b948f] text-[#174714] flex flex-col">
         {/* Hero Section - Increased height for better desktop rendering */}
-        <section className="w-full flex items-center justify-center py-8 px-6 mb-4" style={{ minHeight: "220px" }}>
+        <section className="w-full flex items-center justify-start md:justify-center py-8 px-6 mb-0 sm:mb-4" style={{ minHeight: "220px" }}>
           <div className="max-w-5xl mx-auto w-full">
-            {/* Title and GIF container - Offset to the left */}
-            <div className="flex flex-row items-center gap-4 sm:gap-6 md:gap-8 mx-auto justify-start sm:justify-center sm:ml-[-50px] md:ml-[-80px] lg:ml-[-100px]">
+            {/* Title and GIF container - Balanced offset that works on all screens */}
+            <div className="flex flex-row items-center gap-4 sm:gap-6 md:gap-8 mx-auto ml-[-20px] sm:ml-[-30px] md:ml-0 lg:ml-0 justify-start sm:justify-start md:justify-center">
               {/* Star GIF - Responsive sizing for better visibility across devices */}
               <div className="flex items-center justify-center w-[160px] h-[160px] sm:w-[180px] sm:h-[180px] md:w-[200px] md:h-[200px] lg:w-[240px] lg:h-[240px]">
                 <Image
@@ -118,8 +118,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Images Section - Clear separation */}
-        <section className="w-full px-6 pt-0 pb-16 bg-[#9b948f]" style={{ position: "relative" }}>
+        {/* Images Section - Reduced top spacing on mobile */}
+        <section className="w-full px-6 pt-0 pb-16 mt-[-20px] sm:mt-0 bg-[#9b948f]" style={{ position: "relative" }}>
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-col gap-4 mb-4">
               {imagePanels.map((panel, index) => (
