@@ -183,12 +183,7 @@ export default function Home() {
 
         <div className="w-full px-4 sm:px-6 py-6 flex justify-center text-center">
   <p
-    onClick={() =>
-      window.open(
-        "https://0rqe3jewuid.typeform.com/to/kBxNeYrF",
-        "_blank"
-      )
-    }
+  
     className="tracking-widest star-cursor text-black hover:text-[#174714] transition-colors duration-300 cursor-pointer text-xs sm:text-sm md:text-base whitespace-normal sm:whitespace-nowrap max-w-xs sm:max-w-none"
   >
     ✧⋄⋆⋅⋆⋄✧⋄⋆⋅⋆⋄✧ Fully booked for now but let&apos;s plan something soon! ✧⋄⋆⋅⋆⋄✧⋄⋆⋅⋆⋄✧
