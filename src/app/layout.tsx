@@ -1,5 +1,3 @@
-import './globals.css'
-
 export const metadata = {
   title: 'multihyphenate | mlthyphnt',
   description: 'web3 studio working with great humans across verticals like ai agents, culture chains, defi and more.',
@@ -8,7 +6,7 @@ export const metadata = {
     description: 'web3 studio working with great humans across verticals like ai agents, culture chains, defi and more.',
     images: [
       {
-        url: '../../public/images/thumbnail.jpeg', // Path to your image in the public folder
+        url: 'https://www.mlthyphnt.xyz/images/thumbnail.jpeg', // Absolute URL with www
         width: 1200,
         height: 630,
         alt: 'mlthyphnt social preview',
@@ -16,25 +14,13 @@ export const metadata = {
     ],
     locale: 'en_US',
     type: 'website',
-    url: 'https://mlthyphnt.xyz',
+    url: 'https://www.mlthyphnt.xyz', // Include www here as well
   },
   twitter: {
     card: 'summary_large_image',
     title: 'multihyphenate | mlthyphnt',
     description: 'web3 studio working with great humans across verticals like ai agents, culture chains, defi and more.',
-    images: ['../../public/images/thumbnail.jpeg'], // Path to your image
+    images: ['https://www.mlthyphnt.xyz/images/thumbnail.jpeg'], // Absolute URL with www
     creator: '@mlthyphnt',
   }
-}
-
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body className="font-['Aniyah']">{children}</body>
-    </html>
-  )
 }
