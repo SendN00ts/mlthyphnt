@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: 'web3 studio working with great humans across verticals like ai agents, culture chains, defi and more.',
     images: [
       {
-        url: 'https://picsum.photos/1200/630',
+        url: 'https://www.mlthyphnt.xyz/images/thumbnail.jpeg',
         width: 1200,
         height: 630,
         alt: 'mlthyphnt social preview',
