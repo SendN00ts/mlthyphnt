@@ -22,7 +22,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'multihyphenate | mlthyphnt',
     description: 'web3 studio working with great humans across verticals like ai agents, culture chains, defi and more.',
-    images: ['/images/social-preview.png'], // Path to your image
+    images: ['../../public/images/thumbnail.jpeg'], // Path to your image
     creator: '@mlthyphnt',
   }
 }
