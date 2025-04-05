@@ -6,7 +6,7 @@ export const metadata = {
     description: 'web3 studio working with great humans across verticals like ai agents, culture chains, defi and more.',
     images: [
       {
-        url: 'https://www.mlthyphnt.xyz/images/thumbnail.jpeg', // Absolute URL with www
+        url: 'https://picsum.photos/1200/630',  // Using Lorem Picsum with correct OG dimensions
         width: 1200,
         height: 630,
         alt: 'mlthyphnt social preview',
@@ -14,13 +14,13 @@ export const metadata = {
     ],
     locale: 'en_US',
     type: 'website',
-    url: 'https://www.mlthyphnt.xyz', // Include www here as well
+    url: 'https://www.mlthyphnt.xyz',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'multihyphenate | mlthyphnt',
     description: 'web3 studio working with great humans across verticals like ai agents, culture chains, defi and more.',
-    images: ['https://www.mlthyphnt.xyz/images/thumbnail.jpeg'], // Absolute URL with www
+    images: 'https://picsum.photos/1200/600',  // Using Lorem Picsum with Twitter-friendly 2:1 ratio
     creator: '@mlthyphnt',
   }
 }
